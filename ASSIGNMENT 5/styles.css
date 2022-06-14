@@ -1,0 +1,362 @@
+body
+{
+    background-color: yellow;
+}
+h1{
+    text-align: center;
+}
+.grid-container
+{
+    
+    display:grid;
+    grid-template-columns: auto auto auto;
+    gap:80px;
+    justify-content:center;
+    padding-top:30px;
+    height:auto;
+    width:auto;
+}
+ .grid-container >div{
+    height:100px;
+    width:100px;
+}
+
+
+.grid-item1,.grid-item2,.grid-item3
+{
+    background-color:cadetblue ;
+    animation-name:b1;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-direction:normal;
+}
+@keyframes b1
+{
+    0%{transform:skewX(0deg);}
+    
+    50%{transform:skewX(20deg);}
+    100%{transform:skew(-20deg);}
+
+}
+.grid-item4,.grid-item5, .grid-item6
+{
+    background-color: purple;
+    animation-name:b2;
+    animation-iteration-count: infinite;
+    animation-duration:2s;
+    animation-direction:reverse;
+}
+@keyframes b2
+{
+    0%{transform:skewY(0deg);}
+    50%{transform:skewY(-30deg);}
+    100%{transform:skewY(30deg);}
+}
+.grid-item7,.grid-item8, .grid-item9
+{
+    background-color: cadetblue;
+    animation-name:b3;
+    animation-iteration-count:infinite;
+    animation-duration:2s;
+    animation-direction:normal;
+}
+@keyframes b3
+{
+    from{transform:rotate(0deg);}
+    to{transform:rotate(360deg);}
+}
+    
+.grid-item10
+{
+    background-color: darkcyan;
+    border:1px solid black;
+    animation-name:b4;
+    animation-iteration-count:infinite;
+    animation-duration:2s;
+    animation-direction:normal;
+}
+@keyframes b4
+{
+    0%{transform:scaleY(1);}
+    50%{transform:scaleY(0.5);}
+    100%{transform:scaleY(1);}
+}
+.grid-item11
+{
+    background-color: brown;
+    border:1px solid black;
+    animation-name:b5;
+    animation-iteration-count:infinite;
+    animation-duration:2s;
+    animation-direction:normal;
+
+}
+@keyframes b5
+{
+    0%{transform:scaleX(1);}
+    50%{transform:scaleX(0.5);}
+    100%{transform:scaleX(1);}
+}
+.grid-item12
+{
+    background-color: green;
+    border:1px solid black;
+    animation-name:b6;
+    animation-iteration-count:infinite;
+    animation-duration:2s;
+    animation-direction:normal;
+}
+@keyframes b6
+{
+    0%{transform:rotate(0deg);}
+    50%{transform:rotate(90deg);}
+    100%{transform:rotate(0deg);}
+}
+.lnk{
+    text-align:center;
+    font-size: 30px;
+}
+.grid-container1
+{
+    display:grid;
+    grid-template-columns: auto;
+    gap:20px;
+    justify-content:center;
+    padding-top:30px;
+    height:auto;
+    width:auto;
+}
+.grid-container1 > div
+{
+    height:100px;
+    width:100px;
+
+}
+.grid-item13
+{
+    background-color: chartreuse;
+    transition:width 2s;
+    
+}
+.grid-item13:hover{
+    width:300px;
+    transition-timing-function: ease-in-out;
+    
+}
+.grid-item14
+{
+  background-color:chartreuse; 
+  transition:width 2s,height 4s; 
+}
+.grid-item14:hover{
+   width:300px;
+   height:300px;
+   transition-timing-function:linear;
+}
+
+
+.grid-item15
+{
+  background-color:chartreuse; 
+  transition:width 2s; 
+}
+.grid-item15:hover{
+    width:300px;
+    transition-timing-function: ease;
+}
+.grid-item16
+{
+  background-color:chartreuse;
+  transition:width 2s;  
+}
+.grid-item16:hover{
+    width:300px;
+    transition-timing-function: ease-in;
+}
+.grid-item17
+{
+  background-color:chartreuse; 
+  transition:width 2s; 
+}
+.grid-item17:hover{
+    width:300px;
+    transition-timing-function: ease-out;
+}
+.grid-item18
+{
+  background-color:chartreuse; 
+  transition:width 2s; 
+}
+.grid-item18:hover{
+    width:300px;
+    transition-timing-function: ease-in-out;
+}
+.grid-item19
+{
+  background-color:chartreuse; 
+  transition:width 2s; 
+}
+.grid-item19:hover{
+    width:300px;
+    transition-timing-function:linear;
+}
+.container{
+    position:relative;
+    border-left:8px solid orange;
+    border-right:8px solid green;
+}
+
+span1{
+    background-color: orange;
+    font-size: 40px;
+}
+span2
+{
+    background-color: white;
+    font-size: 40px;
+
+}
+span3{
+    background-color: green;
+    font-size: 40px;
+}
+
+.s1
+{
+    height:100vh;
+    width:100%;
+    background-image: url("sky.jpg");
+    background-size: cover;
+    background-position: center;
+    position:relative;
+    overflow-x:hidden;
+}
+.s2
+{
+    height:200px;
+    width:500%;
+    display:block;
+    background-image: url("road.jpg");
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:1;
+    animation:s2 5s linear infinite;
+    overflow: hidden;
+
+}
+@keyframes s2
+{
+    100%
+    {
+        transform:translateX(-3400px);
+    }
+}
+.s3
+{
+    height:250px;
+    width:500%;
+    background-image: url("city.png");
+    position:absolute;
+    bottom:200px;
+    left:0;
+    right:0;
+    display:block;
+    z-index:1;
+    background-repeat: repeat-x;
+    animation:s3 20s linear infinite;
+}
+@keyframes s3{
+    100%
+    {
+        transform:translateX(-1400px);
+    }
+}
+.s4{
+    width:400px;
+    left:50%;
+    bottom:100px;
+    transform:translateX(-50%);
+    position:absolute;
+    z-index:2;
+    overflow: hidden;
+}
+.s4 img{
+    width:100%;
+    animation:s4 1s linear infinte;
+}
+@keyframes s4{
+    100%{
+        transform:translateX(-1px);
+    }
+    50%{
+        transform:translateX(-1px);
+    }
+    0%{
+        transform:translateX(-1px);
+    }
+}
+.s5
+{
+    left:50%;
+    bottom:178px;
+    transform:translateX(-50%);
+    position:absolute;
+    z-index: 2;
+
+}
+.s5 img{
+    width:72px;
+    height:72px;
+    animation:s5 1s linear infinite;
+}
+.s6
+{
+    left:-165px;
+    position:absolute;
+
+} 
+.s7
+{
+    left:80px;
+    position:absolute;
+    
+} 
+@keyframes s5{
+    100%{
+        transform:rotate(360deg);
+    }
+} 
+.m{
+    position:relative;
+    left:25vw;
+    bottom:48vw;
+    
+}
+.bg
+{
+    background-color: white;
+}
+.m2{
+    position:relative;
+    left:75vw;
+    bottom:48vw;
+    
+    
+    
+}
+.m6{
+    position:absolute;
+    bottom:7vw;
+    left:50vw;
+    z-index:2;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,235 @@
+body{
+    background-image:url("shara desert.jpg");
+    background-image: cover;
+    background-repeat: no-repeat;
+}
+.row
+{
+  position:relative;
+  top:2vw;
+  left:4vw;
+}
+#head
+{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    margin-left: 50%;
+    color:white;
+    position:relative;
+    top:-5vw;
+    font-size: 1vw;;
+    
+}
+a{
+  text-decoration: none;
+  color:white;
+}
+
+.sha
+{
+  margin-top:8%;
+  color:white;
+}
+.h1
+{
+  font-size: 7vw;
+}
+.h3
+{
+  width:12vw;
+  height:3vw;
+  text-align:center;
+  border-radius:20px;
+  position:relative;
+  left:5vw;
+  top:2vw;
+  font-size:1.5vw;
+}
+.container{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top:-3%;
+
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    height:40vw;
+    width:40vw;
+    float:right;
+    gap:3vw;
+    float:right;
+    color:white;
+
+  }
+  .grid-item1 {
+    background-image:url("pic-1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: cover;
+
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    border-radius:40px;
+    
+  }
+  .grid-item1:hover{
+     transform:translateY(-20px);
+  }
+     
+  .grid-item2 {
+    background-image:url("pic-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: cover;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    border-radius:40px;
+  }
+  .grid-item2:hover{
+    transform:translateY(-20px);
+ }
+  .grid-item3 {
+    background-image:url("pic-3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: cover;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    border-radius:40px;
+  }
+  .grid-item3:hover{
+    transform:translateY(-20px);
+ }
+  .grid-item4 {
+    background-image: url("pic-4.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: cover;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    border-radius:40px;
+  }
+  .grid-item4:hover{
+    transform:translateY(-20px);
+ }
+  .h
+  {
+    font-size:1.5vw;
+  }
+  .c{
+    font-size: 0.5vw;
+  }
+  /*for tab only*/
+  @media only screen and (max-width: 856px)
+  {
+    body{
+      background-image:url("shara desert.jpg");
+      background-repeat: repeat;
+    
+    }
+    #head
+{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    margin-left: 30%;
+    color:white;
+    position:relative;
+    bottom:100vw;
+    font-size: 15px;
+    
+}
+.container{
+  display:flex;
+  flex-direction:column;
+  justify-content: space-evenly;
+
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  height:80vw;
+  width:60vw;
+  justify-content:left;
+  gap:3vw;
+  margin-left:10%;
+  margin-top: 15%;
+  
+  color:white;
+
+}
+.grid-item1 {
+  background-image:url("pic-1.png");
+  background-image: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: left;
+  border-radius:40px;
+  height:25vw;
+  width:50vw;
+  
+}
+.grid-item2 {
+  background-image:url("pic-2.png");
+  background-image: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: left;
+  border-radius:40px;
+  height:25vw;
+  width:50vw;
+}
+.grid-item3 {
+  background-image:url("pic-3.png");
+  background-image: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: left;
+  border-radius:40px;
+  height:25vw;
+  width:50vw;
+}
+.grid-item4 {
+  background-image: url("pic-4.png");
+  background-image: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: left;
+  border-radius:40px;
+  height:25vw;
+  width:50vw;
+}
+.h{
+  text-align: left;
+  font-size:15px;
+}
+.c{
+  font-size:10px;
+}
+
+
+    
+  }
